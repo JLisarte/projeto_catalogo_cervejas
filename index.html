@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cervejas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer type="module"></script>
+</head>
+<body>
+  <header>
+    <img class="logo" src="./img/beer.svg" alt="copo de cerveja" width="40px" height="40px">
+
+    <h1>BEER</h1>
+    <div class="selection">
+
+      <legend>Itens por página</legend>
+      <select id="select">
+        
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="80">All</option>
+  
+      </select>
+    </div>
+  </header>
+  <main>
+    <table>
+      <thead class="thead">
+        <tr>
+          <th>Cerveja:</th>
+          <th>Descrição:</th>
+          <th>Imagem:</th>
+        </tr>
+      </thead>
+      <tbody id="tbody" class="tbody">
+        </tbody>
+    </table>
+  </main>
+  <footer>
+
+    <div class="pagination">
+      <div class="first">&#171;</div>
+      <div class="prev">&lt;</div>
+      <div class="numbers">
+        <div>1</div>
+      </div>
+      <div class="next">&gt;</div>
+      <div class="last">&#187;</div>
+    </div>
+
+  </footer>
+</body>
+</html>
